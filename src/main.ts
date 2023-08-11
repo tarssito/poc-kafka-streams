@@ -6,7 +6,7 @@ const factory = new KafkaStreams(kafkaStreamsConfig)
 const kstream = factory.getKStream('create-lead')
 
 kstream
-  .from('create-lead')
+  .from('create-client')
   .mapJSONConvenience() //{key: Buffer, value: Buffer} -> {key: string, value: Object}
   .forEach((message) => console.log(message.value))
 

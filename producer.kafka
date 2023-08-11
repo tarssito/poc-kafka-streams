@@ -1,6 +1,6 @@
 
 PRODUCER non-keyed-json-message
-topic: create-lead
+topic: create-client
 {
   "origin": "chatbot 1",
   "data": {
