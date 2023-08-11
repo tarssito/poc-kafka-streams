@@ -1,0 +1,16 @@
+
+PRODUCER non-keyed-json-message
+topic: create-lead
+{
+  "origin": "chatbot 1",
+  "data": {
+    "name": "test",
+    "lastname": "test",
+    "email": "t@t.com",
+    "cellphone": "99999999",
+    "city": "São Paulo",
+    "fu": "SP",
+    "category": "test",
+    "document_number": "3948329489230"
+  }
+}

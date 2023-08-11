@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: 'core'
+  description: 'The core application responsible for dispatching events and requests to the correct backends'
+  namespace: middleware
+  annotations:
+    sonarqube.org/project-key: arq-dig-notification-bff
+    grafana/overview-dashboard: https://grafana.dev.it-digitalnewtech.com.br/d/d2c4be9b-398c-407c-a84f-f96d20861976/kubernetes-cluster-monitoring-via-prometheus?orgId=1&refresh=1d&from=now-24h&to=now&kiosk
+    dev.azure.com/project-repo: BR-DIGITAL-NEW-TECH/core
+spec:
+  type: webapp
+  lifecycle: experimental
+  owner: 'group:default/conecta-np-team'
+  system: system:conecta-np/middleware

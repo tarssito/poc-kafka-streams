@@ -1,0 +1,13 @@
+{
+  "clearMocks": true,
+  "collectCoverage": true,
+  "coverageDirectory": "coverage",
+  "verbose": true,
+  "testResultsProcessor": "./node_modules/jest-junit-reporter",
+  "coverageReporters": ["json", "lcov", "text", "clover", "cobertura"],
+  "testRegex": "\\.spec\\.ts$",
+  "setupFilesAfterEnv": ["./tests/setup-env.ts", "./tests/setup.ts"],
+  "globalTeardown": "./tests/global-tear-down.ts",
+  "globalSetup": "./tests/global-setup.ts",
+  "transformIgnorePatterns": ["node_modules/(?!axios)"]
+}
